@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e5293d" />
+    <title>Happy 2nd Monthsary, My Love!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Pacifico&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <video id="backgroundMusic" autoplay loop playsinline preload="auto" aria-hidden="true">
+      <source src="our-song.mp4" type="video/mp4" />
+    </video>
+    <div class="sky" aria-hidden="true"></div>
+    <div class="web web-left" aria-hidden="true"></div>
+    <div class="web web-right" aria-hidden="true"></div>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <main>
+      <section class="hero">
+        <div class="badge"><span>♥</span> OUR LITTLE ADVENTURE <span>♥</span></div>
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Two months down, forever to go</p>
+            <h1>Happy <span>2nd</span><br />Monthsary!</h1>
+            <p class="intro">Every day with you feels like my favorite kind of adventure—bright, brave, and full of love.</p>
+            <a class="scroll-link" href="#love-note">A note for you <span>↓</span></a>
+          </div>
+          <div class="hero-art" role="img" aria-label="A cute red and blue superhero-inspired heart emblem">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <div class="heart-emblem"><span>♥</span></div>
+            <div class="mini-heart h1">♥</div><div class="mini-heart h2">♥</div><div class="mini-heart h3">♥</div>
+          </div>
+        </div>
+        <div class="date-line"><span></span><p>CELEBRATING US, TODAY & ALWAYS</p><span></span></div>
+      </section>
+
+      <section class="note-section" id="love-note">
+        <div class="note-card">
+          <div class="pin">♥</div>
+          <p class="script">My favorite person,</p>
+          <h2>You make my heart<br />do a little <em>happy dance.</em></h2>
+          <p class="note-text">Thank you for making these past two months so warm, fun, and unforgettable, even though you were so far away. You are my calm in the chaos, my biggest smile, and the person I want beside me for every next chapter.</p>
+          <p class="signoff">With all my love,<br /><strong>Your Hubby ♥</strong></p>
+        </div>
+        <div class="side-copy">
+          <p class="eyebrow">A tiny reminder</p>
+          <h2>You + Me<br /><span>are pretty amazing.</span></h2>
+          <p>Here’s to more late-night talks, silly little moments, and a million reasons to choose each other.</p>
+        </div>
+      </section>
+
+      <section class="memories-section" aria-labelledby="memories-title">
+        <div class="memories-heading">
+          <p class="eyebrow">Snapshots of us</p>
+          <h2 id="memories-title">Our little memories <span>♥</span></h2>
+          <p>Proof that every ordinary day is better when I get to share it with you.</p>
+        </div>
+        <div class="photo-grid">
+          <figure class="photo photo-one"><img src="images/memory-1.png" alt="A sweet close-up selfie together" loading="lazy" /><figcaption>Us being cute ✦</figcaption></figure>
+          <figure class="photo photo-two"><img src="images/memory-2.png" alt="A mirror selfie together" loading="lazy" /><figcaption>My favorite duo</figcaption></figure>
+          <figure class="photo photo-three"><img src="images/memory-3.png" alt="A sunny outdoor selfie together" loading="lazy" /><figcaption>Sunshine days</figcaption></figure>
+          <figure class="photo photo-four"><img src="images/memory-4.png" alt="A relaxed outdoor photo together" loading="lazy" /><figcaption>Just us ♥</figcaption></figure>
+          <figure class="photo photo-five"><img src="images/memory-5.png" alt="A fun outdoor selfie together" loading="lazy" /><figcaption>Silly faces, big love</figcaption></figure>
+          <figure class="photo photo-six"><img src="images/memory-6.png" alt="A candid selfie together" loading="lazy" /><figcaption>Always you</figcaption></figure>
+          <figure class="photo photo-seven"><img src="images/memory-7.png" alt="A happy day out together" loading="lazy" /><figcaption>Adventure buddies</figcaption></figure>
+          <figure class="photo photo-eight"><img src="images/memory-8.png" alt="A cozy restaurant photo together" loading="lazy" /><figcaption>Dates with you</figcaption></figure>
+          <figure class="photo photo-nine"><img src="images/memory-9.png" alt="Walking together side by side" loading="lazy" /><figcaption>Side by side</figcaption></figure>
+          <figure class="photo photo-ten"><img src="images/memory-10.png" alt="Holding hands together" loading="lazy" /><figcaption>Hand in hand</figcaption></figure>
+          <figure class="photo photo-eleven"><img src="images/memory-11.png" alt="A cozy coffee date photo together" loading="lazy" /><figcaption>Coffee dates</figcaption></figure>
+          <figure class="photo photo-twelve"><img src="images/memory-12.png" alt="A fun silly selfie together" loading="lazy" /><figcaption>My favorite silly</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="surprise-section">
+        <div class="surprise-card" id="surpriseCard">
+          <div class="sparkles" aria-hidden="true">✦ &nbsp; ✧ &nbsp; ✦</div>
+          <p class="eyebrow">One more thing...</p>
+          <h2 id="surpriseTitle">I have a surprise<br />for you!</h2>
+          <p id="surpriseText">Tap the button and catch a little love from me.</p>
+          <button id="revealButton" type="button">Catch it! <span>♥</span></button>
+          <div class="revealed" id="revealed" aria-live="polite">
+            <span>💌</span><strong>You are my favorite plot twist.</strong>
+            <h3>Happy Monthsary, My Wife</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>Made with a whole lot of <span>♥</span> for our 2nd monthsary</footer>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Play our song" aria-pressed="false">
+      <span class="music-toggle-icon">♫</span><span class="music-toggle-text">Play our song</span>
+    </button>
+    <script src="script.js"></script>
+  </body>
+</html>
