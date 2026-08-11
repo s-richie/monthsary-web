@@ -43,8 +43,8 @@
           <div class="pin">♥</div>
           <p class="script">My favorite person,</p>
           <h2>You make my heart<br />do a little <em>happy dance.</em></h2>
-          <p class="note-text">Thank you for making these past two months so warm, fun, and unforgettable, even though you were so far away. You are my calm in the chaos, my biggest smile, and the person I want beside me for every next chapter.</p>
-          <p class="signoff">With all my love,<br /><strong>Your Hubby ♥</strong></p>
+          <p class="note-text">Thank you for making these past two months so warm, fun, and unforgettable. You are my calm in the chaos, my biggest smile, and the person I want beside me for every next chapter.</p>
+          <p class="signoff">With all my love,<br /><strong>Your biggest fan ♥</strong></p>
         </div>
         <div class="side-copy">
           <p class="eyebrow">A tiny reminder</p>
@@ -72,6 +72,22 @@
           <figure class="photo photo-ten"><img src="images/memory-10.png" alt="Holding hands together" loading="lazy" /><figcaption>Hand in hand</figcaption></figure>
           <figure class="photo photo-eleven"><img src="images/memory-11.png" alt="A cozy coffee date photo together" loading="lazy" /><figcaption>Coffee dates</figcaption></figure>
           <figure class="photo photo-twelve"><img src="images/memory-12.png" alt="A fun silly selfie together" loading="lazy" /><figcaption>My favorite silly</figcaption></figure>
+          <figure class="photo"><img src="images/memory-13.png" alt="A sunny outdoor selfie together" loading="lazy" /><figcaption>Sunny faces</figcaption></figure>
+          <figure class="photo"><img src="images/memory-14.png" alt="A playful outdoor selfie together" loading="lazy" /><figcaption>Little moments</figcaption></figure>
+          <figure class="photo"><img src="images/memory-15.png" alt="A reflection photo together at the mall" loading="lazy" /><figcaption>Reflections of us</figcaption></figure>
+          <figure class="photo"><img src="images/memory-16.png" alt="A colorful mirror photo together" loading="lazy" /><figcaption>Out and about</figcaption></figure>
+          <figure class="photo"><img src="images/memory-17.png" alt="A café date selfie together" loading="lazy" /><figcaption>Another cute date</figcaption></figure>
+          <figure class="photo"><img src="images/memory-18.png" alt="A relaxed candid photo together" loading="lazy" /><figcaption>Cozy days</figcaption></figure>
+          <figure class="photo"><img src="images/memory-19.png" alt="A sweet candid photo together" loading="lazy" /><figcaption>Just chilling</figcaption></figure>
+          <figure class="photo"><img src="images/memory-20.png" alt="A funny candid photo together" loading="lazy" /><figcaption>You make me smile</figcaption></figure>
+          <figure class="photo"><img src="images/memory-21.png" alt="A food court date photo together" loading="lazy" /><figcaption>Food dates</figcaption></figure>
+          <figure class="photo"><img src="images/memory-22.png" alt="A café selfie together" loading="lazy" /><figcaption>My favorite person</figcaption></figure>
+          <article class="memory-letter-card">
+            <span class="letter-stamp">♥</span>
+            <p>There are still so many pages</p>
+            <h3>More memories,<br /><em>my wife</em></h3>
+            <button id="openLetter" type="button">Read my letter <span>→</span></button>
+          </article>
         </div>
       </section>
 
@@ -84,11 +100,23 @@
           <button id="revealButton" type="button">Catch it! <span>♥</span></button>
           <div class="revealed" id="revealed" aria-live="polite">
             <span>💌</span><strong>You are my favorite plot twist.</strong>
-            <h3>Happy Monthsary, My Wife</h3>
           </div>
         </div>
       </section>
     </main>
+
+    <div class="letter-modal" id="letterModal" role="dialog" aria-modal="true" aria-labelledby="letterTitle" hidden>
+      <div class="letter-overlay" data-close-letter></div>
+      <article class="letter-popup">
+        <button class="close-letter" type="button" data-close-letter aria-label="Close letter">×</button>
+        <span class="letter-seal">♥</span>
+        <p class="script">My dearest wife,</p>
+        <h2 id="letterTitle">Our story is still<br />my favorite one.</h2>
+        <p>Every photo here is a tiny piece of the happiness you bring into my life. Thank you for the laughter, the soft moments, the silly faces, and every little adventure we share.</p>
+        <p>I promise to keep choosing you, making memories with you, and loving you through every chapter still waiting for us.</p>
+        <p class="letter-signoff">Forever yours,<br /><strong>Your hubby ♥</strong></p>
+      </article>
+    </div>
 
     <footer>Made with a whole lot of <span>♥</span> for our 2nd monthsary</footer>
     <button class="music-toggle" id="musicToggle" type="button" aria-label="Play our song" aria-pressed="false">

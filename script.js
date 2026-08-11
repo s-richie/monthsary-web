@@ -5,6 +5,8 @@ const text = document.querySelector('#surpriseText');
 const particles = document.querySelector('#particles');
 const backgroundMusic = document.querySelector('#backgroundMusic');
 const musicToggle = document.querySelector('#musicToggle');
+const openLetter = document.querySelector('#openLetter');
+const letterModal = document.querySelector('#letterModal');
 
 function updateMusicButton(isPlaying) {
   musicToggle.classList.toggle('playing', isPlaying);
@@ -29,6 +31,26 @@ document.addEventListener('pointerdown', playOurSong, { once: true });
 musicToggle.addEventListener('click', () => {
   if (backgroundMusic.paused) playOurSong();
   else { backgroundMusic.pause(); updateMusicButton(false); }
+});
+
+openLetter.addEventListener('click', () => {
+  letterModal.hidden = false;
+  document.body.style.overflow = 'hidden';
+  letterModal.querySelector('.close-letter').focus();
+});
+
+function closeLetter() {
+  letterModal.hidden = true;
+  document.body.style.overflow = '';
+  openLetter.focus();
+}
+
+letterModal.querySelectorAll('[data-close-letter]').forEach((element) => {
+  element.addEventListener('click', closeLetter);
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && !letterModal.hidden) closeLetter();
 });
 
 function makeHeart(x, y) {
