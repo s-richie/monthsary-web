@@ -7,6 +7,21 @@ const backgroundMusic = document.querySelector('#backgroundMusic');
 const musicToggle = document.querySelector('#musicToggle');
 const openLetter = document.querySelector('#openLetter');
 const letterModal = document.querySelector('#letterModal');
+const gifSidekick = document.querySelector('#gifSidekick');
+const celebrationGif = document.querySelector('#celebrationGif');
+const celebrationGifs = [
+  { src: 'images/love-couple.gif', alt: 'A cute animated couple sharing love' },
+  { src: 'images/hug-bears.gif', alt: 'Two animated bears hugging' },
+  { src: 'images/spider-dance.gif', alt: 'A tiny superhero-inspired character dancing' },
+];
+let gifIndex = 0;
+
+function showNextGif() {
+  const gif = celebrationGifs[gifIndex];
+  celebrationGif.src = gif.src;
+  celebrationGif.alt = gif.alt;
+  gifIndex = (gifIndex + 1) % celebrationGifs.length;
+}
 
 function updateMusicButton(isPlaying) {
   musicToggle.classList.toggle('playing', isPlaying);
@@ -71,6 +86,10 @@ button.addEventListener('click', () => {
   button.disabled = true;
   title.innerHTML = 'A little reminder:<br />I choose you. <span>♥</span>';
   text.textContent = 'Today, tomorrow, and every ordinary day made extraordinary with you.';
+  gifSidekick.hidden = false;
+  gifSidekick.classList.add('show');
+  showNextGif();
+  setInterval(showNextGif, 2800);
   for (let i = 0; i < 30; i++) setTimeout(() => makeHeart(20 + Math.random() * 60, 68 + Math.random() * 20), i * 45);
 });
 
